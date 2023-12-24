@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const serverIP = ip.address();
 
-app.set('view-engine', 'pug');
+app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, "views"));
 
 app.get('/home', (request, response) => {
