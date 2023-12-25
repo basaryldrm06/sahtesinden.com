@@ -1,0 +1,56 @@
+navbar({
+	anasayfa, ürünler, teklifler
+	arama çubuğu
+	ilan ver, (profil, kayit ol)
+})
+
+Anasayfa
+	Karşılama Mesajı
+	Vitrin
+	Açıklama
+	Github Repository
+	Author
+Ürünler (Filtrele)
+	Kategoriler
+	Filtrele
+	Sırala
+
+Giriş yap (Kayıt ol, Giriş yap)
+Profil
+İlan ver
+Teklifler (Alınan teklifler, Verilen teklifler)
+
+hesap:
+	kullanıcı adı
+	acıklama
+	şifre
+	email
+	Aktif ilanlar : Array
+	Geçmiş işlemler (alınan, satılan)
+
+ilan:
+	urun_id
+	resim
+	isim
+	fiyat
+	açıklama
+	kategori
+	özellikler
+	yorumlar
+	görüntülenme sayısı
+	satıcı bilgileri
+	degerlendirme
+	
+teklif
+	gelen
+		urun_no
+		urun acıklama
+		resim
+		fiyat
+		seçenekler(sat, sil)
+	giden
+		urun_no
+		urun_acıklama
+		resim
+		fiyat
+		secenekler(fiyatı degistir, sil)

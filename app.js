@@ -2,8 +2,7 @@ const express = require('express');
 const ip = require('ip');
 const path = require('path');
 
-const bootstrap5js = path.join(__dirname, 'node_modules', 'bootstrap', 'dist', 'css', 'bootstrap.min.css');
-const bootstrap5css = path.join(__dirname, 'node_modules', 'bootstrap', 'dist', 'js', 'bootstrap.bundle.min.js');
+const publicPath = path.join(__dirname, 'public');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,8 +15,7 @@ app.get('/home', (request, response) => {
     response.render("pages/home");
 });
 
-app.use('bootstrap/css', express.static(bootstrap5css));
-app.use('bootstrap/js', express.static(bootstrap5js));
+app.use(express.static(publicPath));
 
 app.listen(PORT, () => {
     console.log('\n\nSERVER HAS BEEN STARTED');
