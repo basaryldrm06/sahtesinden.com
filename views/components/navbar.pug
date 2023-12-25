@@ -1,37 +1,28 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC", crossorigin="anonymous")
-        link(href="/styles/background.css", rel="stylesheet")
-    body
-        nav.navbar.navbar-expand-lg.navbar-light.bg-warning
-            .container-fluid
-                a.navbar-brand(href="#") Navbar
-                button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
-                    span.navbar-toggler-icon
-                .collapse.navbar-collapse(id="navbarSupportedContent")
-                    ul.navbar-nav.me-auto.mb-2.mb-lg-0
-                        li.nav-item 
-                            a.nav-link.active.text-dark(aria-current="page", href="#") HOME 
-                        li.nav-item 
-                            a.nav-link.active.text-dark(aria-current="page", href="#") ADVERTS 
-                        li.nav-item 
-                            a.nav-link.active.text-dark(aria-current="page", href="#") OFFERS 
+nav.navbar.navbar-expand-lg.navbar-light.bg-warning
+    .container-fluid
+        a.navbar-brand(href="#") Navbar
+        button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse(id="navbarSupportedContent")
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                li.nav-item 
+                    a.nav-link.active.text-dark(aria-current="page", href="#") HOME 
+                li.nav-item 
+                    a.nav-link.active.text-dark(aria-current="page", href="#") ADVERTS 
+                li.nav-item 
+                    a.nav-link.active.text-dark(aria-current="page", href="#") OFFERS 
 
-                    form.d-flex.navbar-nav.me-auto.d-none.d-lg-flex
-                        input.form-control.me-2(type="search", placeholder="Search", aria-label="Search")
-                        button.btn.btn-outline-success(type="submit") Search 
-                    
-                    .dropdown-divider.d-lg.d-lg-none
+            form.d-flex.navbar-nav.me-auto.d-none.d-lg-flex
+                input.form-control.me-2(type="search", placeholder="Search", aria-label="Search")
+                button.btn.btn-outline-success(type="submit") Search 
+            
+            .dropdown-divider.d-lg.d-lg-none
 
-                    ul.navbar-nav.mb-2.mb-lg-0
-                        li.nav-item 
-                            a.nav-link.active.text-dark(aria-current="page", href="#") PLACE ADVERTISEMENT
-                        li.nav-item
-                            a.nav-link.active.text-dark(aria-current="page", href="#") PROFILE            
-        .border-bottom.bg-white
-        block content  
-        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js", integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM", crossorigin="anonymous")
+            ul.navbar-nav.mb-2.mb-lg-0
+                li.nav-item 
+                    a.nav-link.active.text-dark(aria-current="page", href="#") PLACE ADVERTISEMENT
+                li.nav-item
+                    a.nav-link.active.text-dark(aria-current="page", href="#") PROFILE            
+.border-bottom.bg-white
+
+    

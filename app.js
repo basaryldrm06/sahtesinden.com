@@ -15,6 +15,10 @@ app.get('/home', (request, response) => {
     response.render("pages/home");
 });
 
+app.get('/adverts', (request, response) => {
+    response.render("pages/adverts");
+});
+
 app.use(express.static(publicPath));
 
 app.listen(PORT, () => {
