@@ -1,0 +1,31 @@
+extends ../components/layout
+
+block content 
+  .col-8
+    .container.mt-3.text-start
+      form
+        .mb-3
+          label(for="image" class="form-label") Image
+          input(type="file" class="form-control" id="image" name="image" accept="image/*")
+        .mb-3
+          label(for="name" class="form-label") Name
+          input(type="text" class="form-control" id="name" name="name")
+        .mb-3
+          label(for="price" class="form-label") Price
+          input(type="text" class="form-control" id="price" name="price")
+        .mb-3
+          label(for="description" class="form-label") Description
+          textarea(class="form-control" id="description" name="description" rows="3")
+        .mb-3
+          label(for="category" class="form-label") Category
+          select(class="form-select" id="category" name="category")
+            option(value="electronics") Electronics
+            option(value="clothing") Clothing
+            option(value="home-and-garden") Home and Garden
+        .mb-3
+          label(for="subCategory" class="form-label") Subcategory
+          select(class="form-select" id="subCategory" name="subCategory")
+        .mb-3
+          label(for="features" class="form-label") Features
+          input(type="text" class="form-control" id="features" name="features")
+        button(type="submit" class="btn btn-primary") Publish

@@ -35,6 +35,7 @@ ilan:
 	fiyat
 	açıklama
 	kategori
+	alt kategori
 	özellikler
 	yorumlar
 	görüntülenme sayısı
