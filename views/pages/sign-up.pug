@@ -1,0 +1,30 @@
+extends ../components/layout.pug
+
+block content
+    .container
+        .row.justify-content-center.min-vh-100
+            .col-md-6
+                .card
+                    .card-body.text-start
+                        h2.card-title.text-center Sign Up
+                        .mb-3.row.mt-5
+                            .col-md-6
+                                label(for="firstName" class="form-label") First Name
+                                input(type="text" class="form-control" id="firstName" name="firstName", required)
+                            .col-md-6
+                                label(for="lastName" class="form-label") Last Name
+                                input(type="text" class="form-control" id="lastName" name="lastName", required)
+                        .mb-3
+                            label(for="username" class="form-label") Username
+                            input(type="text" class="form-control" id="username" name="username", required)
+                        .mb-3
+                            label(for="password" class="form-label") Password
+                            input(type="password" class="form-control" id="password" name="password", required)
+                        .mb-3
+                            label(for="passwordconfirm" class="form-label") Confirm Password
+                            input(type="password" class="form-control" id="passwordconfirm" name="passwordconfirm", required)
+                        .mb-3
+                            label(for="email" class="form-label") Email
+                            input(type="email" class="form-control" id="email" name="email", required)
+                        button(type="submit" class="btn btn-primary w-100") Sign Up
+                        

@@ -27,6 +27,16 @@ app.get('/offers', (request, response) => {
     response.render("pages/offers");
 })
 
+app.get('/sign-in', (request, response) => {
+    response.render("pages/sign-in");
+})
+
+app.get('/sign-up', (request, response) => {
+    response.render("pages/sign-up");
+})
+
+
+
 app.use(express.static(publicPath));
 
 app.listen(PORT, () => {

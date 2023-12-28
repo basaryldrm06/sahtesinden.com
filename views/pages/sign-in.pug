@@ -1,0 +1,17 @@
+extends ../components/layout.pug
+
+block content    
+    .container
+        .row.justify-content-center.align-items-center.min-vh-100
+            .col-md-6
+                .card
+                    .card-body
+                        h2.card-title.text-center Sign In
+                        form(action="/login" method="post")
+                            .mb-3
+                                label(for="username" class="form-label") Username
+                                input(type="text" class="form-control" id="username" name="username", required)
+                            .mb-3
+                                label(for="password" class="form-label") Password
+                                input(type="password" class="form-control" id="password" name="password", required)
+                            button(type="submit" class="btn btn-primary w-100") Sign In
